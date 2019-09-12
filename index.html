@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Work</title>
+<!--<script src="jquery.js"></script>-->
+<script src="Script.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="style.css"/>-->
+</head>
+<body>
+<canvas id="canvas1"></canvas>
+<canvas id="canvas2"></canvas>
+<script>
+
+var St1 = new Channel("Channel №1", "green", "orange", "red", -50, 200, 0, 100);
+var St2 = new Channel("Channel №2", "green", "blue", "gold", -100, 200, 0, 100);
+var St3 = new Channel("Channel №3", "green", "orange", "red", -50, 200, 0, 100);
+var St4 = new Channel("Channel №4", "red", "green", "blue", -50, 200, 0, 100);
+var CH = new Array();
+CH[0] = St1;
+CH[1] = St2;
+CH[2] = St3;
+//CH[3] = St4;
+var CHN = new Array();
+CHN[0] = St4;
+
+var El1 = new Element("Element №1", "canvas1", "silver", CH, 400, 300, 10, 30000);
+var El1 = new Element("Element №2", "canvas2", "gold", CHN, 300, 150, 30, 30000);
+//alert(El1.CHANNEL.Channel);
+
+</script>
+
+</body>
+</html>
